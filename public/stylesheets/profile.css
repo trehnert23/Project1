@@ -1,0 +1,30 @@
+h1 {
+	font-family: rockwell extra bold;
+	text-align: center;
+	font-size: 50px;
+	margin-top: 2%;
+	color: #A82310;
+	font-outline: white;
+	text-shadow: 2px 2px #ff0000;
+}
+
+body {
+	background: url('http://bgfons.com/upload/wood_texture3835.jpg');
+	background-repeat: repeat;
+}
+
+.shooting_gallery {
+	background: url('http://www.artduck.com/images/animation/environment/dino_forest.jpg');
+	background-position: center;
+	border-radius: 20px;
+	width: 70%;
+	height: 70%;
+	margin-left: 5%;
+	border: 3px solid #A82310;
+}
+
+.target1 {
+	width: 80px;
+	height: 80px;
+	border-radius: 100px;
+}

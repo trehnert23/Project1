@@ -1,0 +1,107 @@
+body {
+  background-color: blue;
+}
+
+div {
+  position:absolute;
+}
+
+.login_container {
+  z-index: 1;
+  height: 55%;
+  width: 30%;
+  color: white;
+  background-color: #0099FF;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin-left: 6%;
+  margin-top: 6%;
+  font-family: Courier New;
+  overflow:hidden;
+}
+
+.login_text {
+  font-family: Courier New;
+  font-size: 40px;
+  margin-left: 33%;
+  margin-top: 5%;
+}
+
+.login_boxes {
+  font-family: Courier New;
+  padding: 1%;
+  margin-left: 5%;
+}
+
+.username {
+  width: 80%;
+  color: white;
+  font-size: 30px;
+  background-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  border-color: white;
+}
+
+.username_tag {
+  margin-top: 20%;
+  font-size: 25px;
+}
+
+.password {
+  width: 80%;
+  color: white;
+  font-size: 30px;
+  background-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  border-color: white;
+}
+
+.password:focus {
+  color: white;
+}
+
+.password_tag {
+  margin-top: 45%;
+  font-size: 25px;
+}
+
+.submit {
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-top: 75%;
+  margin-left: 30%;
+  border-style: hidden;
+  font-family: Courier New;
+}
+
+.sign_up {
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: transparent;
+  border-style: hidden;
+  margin-left: 32%;
+  margin-top: 3%;
+  font-family: Courier New;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

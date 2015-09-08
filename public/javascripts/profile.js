@@ -47,6 +47,17 @@ $(document).ready(function(){
   		counter++;
 	});
 
+
+
+	var move = function() {
+	    $(".target").animate({"left": "-40px"}, 1000, function() { 
+	        $(this).animate({"left": "40px"}, 1000) 
+	    })
+	 setTimeout(move, 2000);
+	}
+
+	move();
+
 });
 
 

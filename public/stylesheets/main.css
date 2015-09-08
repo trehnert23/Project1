@@ -1,9 +1,16 @@
 body {
-  background-color: blue;
+    background: url('http://news.tacticalgear.com/wp-content/uploads/2012/06/camo11.jpg');
+    background-size: 100%;
 }
 
 div {
   position:absolute;
+}
+
+.logo {
+  width: 60%;
+  margin-left: 40%;
+  margin-top: 3%;
 }
 
 .login_container {
@@ -11,7 +18,8 @@ div {
   height: 55%;
   width: 30%;
   color: white;
-  background-color: #0099FF;
+  background: url('http://bgfons.com/upload/wood_texture3835.jpg');
+  background-size: 133%;
   border-radius: 10px;
   border: 1px solid white;
   margin-left: 6%;
@@ -38,7 +46,7 @@ div {
   color: white;
   font-size: 30px;
   background-color: transparent;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0px 0px 2px 0px;
   border-color: white;
 }
 
@@ -52,7 +60,7 @@ div {
   color: white;
   font-size: 30px;
   background-color: transparent;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0px 0px 2px 0px;
   border-color: white;
 }
 

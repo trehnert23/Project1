@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
 
 // create score schema
 var ScoreSchema = new Schema({
-  score: Number,
+  time: Number,
   createdAt: {type: Date, default: Date.now}
 });
 
@@ -14,7 +14,7 @@ var ScoreSchema = new Schema({
 var UserSchema = new Schema({
   username: {type: String, required: true},
   passwordDigest: {type: String, required: true},
-  scores: [ScoreSchema],
+  times: [ScoreSchema],
   createdAt: {type: Date, default: Date.now}
 });
 

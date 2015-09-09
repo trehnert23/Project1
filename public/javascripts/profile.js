@@ -26,36 +26,32 @@ function Countdown(countdown) {
 		var interval = setInterval(function() {
 		    //make the targets visible && locked
 		   document.getElementById('countdown_div').innerHTML = --seconds_left;
-		   if(seconds_left <= 0 ){
-		   		if(!$("#timer_div").hasClass('pauseTimer')){
-			   		var player_time = setInterval(function(){
-			   			document.getElementById('timer_div').innerHTML = ++timer;
-			   		}, 1000);
-			      	//remove timer numbers
-			      	$('#countdown_div').remove();
+		   if (seconds_left <= 0 ){
 
-				    // creates initial targets
-				    while(numTargs>0){
-				    	createTarget();
-				    }
+		   		var player_time = setInterval(function(){
+		   			document.getElementById('timer_div').innerHTML = ++timer;
+		   		}, 1000);
+		      	//remove timer numbers
+		      	$('#countdown_div').remove();
 
-				    //delete targets when clicked
-				    $(".targets").on("click",function(event) {
-		    	  		$(this).remove();
-		    	  		score++;
-		    	  		if(score<6){
-		    	  			console.log(score);
-		    	  		}
-		    	  		else{
-		    	  			Round();
-		    	  		}
-		    	  		numTargs=6;
-		    		});
-		    		clearInterval(interval);
-		    	}
-		    	else {
-		    		console.log("Stopped Counting");
-		    	}
+			    // creates initial targets
+			    while(numTargs>0){
+			    	createTarget();
+			    }
+
+			    //delete targets when clicked
+			    $(".targets").on("click",function(event) {
+	    	  		$(this).remove();
+	    	  		score++;
+	    	  		if(score<6){
+	    	  			console.log(score);
+	    	  		}
+	    	  		else{
+	    	  			Round();
+	    	  		}
+	    	  		numTargs=6;
+	    		});
+	    		clearInterval(interval);
 		   }
 		}, 1000);
 	});
@@ -73,10 +69,9 @@ function Round(){
   		score++;
   		console.log(score);
   		if(score===6){
-  			$("#timer_div").addClass('pauseTimer');
-  			// numTargs=6;
-  			// console.log("numTargs= ", numTargs);
-  			// Round();
+  			numTargs=6;
+  			console.log("numTargs= ", numTargs);
+  			Round();
   		}
   		else if(score===12){
   			console.log("numTargs= ", numTargs);
@@ -89,8 +84,7 @@ function Round(){
   			Round();
   		}
   		else if(score===24){
-  			// $("#timer_div").addClass('pauseTimer');
-  			alert("winner");
+  			alert("winner!");
   		}
 	});
 }

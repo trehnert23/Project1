@@ -1,19 +1,24 @@
 <html>
 <head>
-  <title>main</title>
+  <title>Shooting Gallery</title>
   <meta charset="utf-8" />
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
   
   <link rel="stylesheet" type="text/css" href="/stylesheets/profile.css">
+  <link rel="shortcut icon" href="http://www.clipartbest.com/cliparts/jcx/Eee/jcxEeeKcE.png">
 </head>
 <body>
   <h1>SHOOTING GALLERY</h1>
-    <div id="timer_div"></div>
+    <div class="timer_box">
+      <div class="time_text">TIME:</div>
+      <div id="timer_div"></div>
+    </div>
+    <div id="countdown_div"></div>
     <div class="shooting_gallery" id="shuffle">
     </div>
-    <!-- <button>RESET</button> -->
+    <div class="scoreboard"></div>
     <!-- <form method="get" action="/logout">
       <div class="logout_button">
         <button>Logout</button>

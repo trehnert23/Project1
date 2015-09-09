@@ -1,11 +1,15 @@
 h1 {
 	font-family: vanilla whale;
-	text-align: center;
+	margin-left: 17%;
 	font-size: 100px;
-	margin-top: 2%;
+	margin-top: 1%;
 	color: #A82310;
 	font-outline: white;
-	text-shadow: 2px 2px #ff0000;
+	text-shadow:
+		-3px -3px 0 black,  
+	    3px -3px 0 black,
+	    -3px 3px 0 black,
+	    3px 3px 0 black;
 }
 
 body {
@@ -26,81 +30,97 @@ body {
 	position: relative;
 }
 
-#timer_div {
+.shooting_gallery:before {
+	content: " ";
+  	position: absolute;
+  	z-index: -1;
+  	border-radius: 20px;
+  	top: -5px;
+  	left: -5px;
+  	right: -5px;
+  	bottom: -5px;
+  	border: 5px solid black;
+}
+
+#countdown_div {
 	position: absolute;
 	z-index: 1;
 	font-size: 450px;
-	font-family: arial black;
+	font-family: vanilla whale;
 	color: #A82310;
-	margin-top: -9%;
-	margin-left: 28%;
+	margin-top: -7%;
+	margin-left: 34%;
 	text-align: center;
+	text-shadow:
+		-3px -3px 0 black,  
+	    3px -3px 0 black,
+	    -3px 3px 0 black,
+	    3px 3px 0 black;
 }
 
 .start_button {
 	position: absolute;
 	z-index: 1;
 	margin-top: -4%;
-	color: #A82310;
+	color: black;
 	font-size: 40px;
 	border-radius: 10px;
-	background-color: white;
-	margin-left: 36%;
-	border: 2px solid #A82310;
+	background-color: #A82310;
+	margin-left: 35%;
+	border: 2px solid black;
 	font-family: vanilla whale;
 }
 
-
-
-
-
-/*.target1 {
-	width: 80px;
-	height: 80px;
-	margin-left: 5%;
-	margin-top: 20%;
+.timer_box {
+	height: 54px;
+	width: 180px;
+	border-radius: 10px;
+	border: 2px solid black;
 	position: absolute;
+	z-index: 1;
+	font-size: 40px;
+	font-family: vanilla whale;
+	background-color: #A82310;
+	margin-top: 33.4%;
+	margin-left: 15%;
 }
 
-.target2 {
-	width: 40px;
-	height: 40px;
-	margin-left: 20%;
-	margin-top: 8%;
-	position: absolute;
+.time_text {
+	margin-top: 1.5%;
+	margin-left: 3%;
 }
 
-.target3 {
-	width: 20px;
-	height: 20px;
-	margin-left: 50%;
-	margin-top: 10%;
+#timer_div {
+	z-index: 1;
 	position: absolute;
+	margin-left: 80%;
+	color: black;
+	margin-top: -25.5%; 
 }
 
-.target4 {
-	width: 80px;
-	height: 80px;
-	margin-left: 75%;
-	margin-top: 40%;
+.scoreboard {
 	position: absolute;
+	z-index: 1;
+	background-color: #A82310;
+	width: 20%;
+	height: 69%;
+	margin-top: -42.5%;
+	margin-left: 77%;
+	border-radius: 10px;
+	border: 3px solid black;
 }
 
-.target5 {
-	width: 60px;
-	height: 60px;
-	margin-left: 60%;
-	margin-top: 15%;
-	position: absolute;
-}
 
-.target6 {
-	width: 35px;
-	height: 35px;
-	margin-left: 40%;
-	margin-top: 30%;
-	position: absolute;
-}*/
+
+
+
+
+
+
+
+
+
+
 
 
 

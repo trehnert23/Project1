@@ -1,27 +1,20 @@
-// dependencies
-var mongoose = require('mongoose'),
-Schema = mongoose.Schema,
-bcrypt = require('bcrypt');
-
-// the user schema
-var UserSchema = new Schema({
-  username: {type: String, required: true},
-  passwordDigest: {type: String, required: true},
-  createdAt: {type: Date, default: Date.now}
-});
-
-// export user model
-module.exports = User;
-
 // require dependencies
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema,
     bcrypt = require('bcrypt');
 
+// create score schema
+var ScoreSchema = new Schema({
+  score: Number,
+  createdAt: {type: Date, default: Date.now}
+});
+
+
 // create user schema
 var UserSchema = new Schema({
   username: {type: String, required: true},
   passwordDigest: {type: String, required: true},
+  scores: [ScoreSchema],
   createdAt: {type: Date, default: Date.now}
 });
 
@@ -74,6 +67,7 @@ UserSchema.methods.checkPassword = function (password) {
 };
 
 // define user model
+var Score = mongoose.model('Score', ScoreSchema);
 var User = mongoose.model('User', UserSchema);
 
 // export user model

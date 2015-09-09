@@ -20,18 +20,34 @@ body {
 	width: 70%;
 	height: 70%;
 	margin-left: 5%;
-	margin-top: -3%;
+	margin-top: -5%;
 	margin-bottom: 5%;
 	border: 3px solid #A82310;
 	position: relative;
 }
 
-.target {
-	width: 80px;
-	height: 80px;
-	margin-left: 5%;
-	margin-top: 20%;
+#timer_div {
 	position: absolute;
+	z-index: 1;
+	font-size: 450px;
+	font-family: arial black;
+	color: #A82310;
+	margin-top: -7%;
+	margin-left: 28%;
+	text-align: center;
+}
+
+.start_button {
+	position: absolute;
+	z-index: 1;
+	margin-top: -4%;
+	color: #A82310;
+	font-size: 40px;
+	border-radius: 10px;
+	background-color: white;
+	margin-left: 30%;
+	border: 2px solid #A82310;
+	font-family: vanilla whale;
 }
 
 

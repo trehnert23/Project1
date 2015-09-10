@@ -12,5 +12,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "underscore": "~1.8.3"
+  }
 }

@@ -6,6 +6,7 @@ $(document).ready(function(){
 	var numTargs = 6;
 	var timer = 0;
 	var total = 24;
+	console.log(score);
 
 
 	function createTarget() {

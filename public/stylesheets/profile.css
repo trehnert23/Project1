@@ -149,8 +149,11 @@ body {
 
 .scoreboard_left {
 	background-color: white;
+	color: black;
+	text-align: center;
 	margin-top: 1%;
 	margin-left: 2%;
+	font-size: 30px;
 	border: 2px solid #fdb813;
 	border-top-left-radius: 10px; 
 	border-bottom-left-radius: 10px; 
@@ -160,6 +163,9 @@ body {
 
 .scoreboard_right {
 	z-index: 1;
+	color: black;
+	text-align: center;
+	font-size: 30px;
 	background-color: white;
 	margin-top: -146.5%;
 	margin-left: 65%;

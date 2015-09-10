@@ -21,6 +21,7 @@ $(document).ready(function(){
 
 
 	function Countdown(countdown) {
+		
 		$(".start_button").on("click", function(event) {
 			var seconds_left = countdown;
 			var interval = setInterval(function() {
@@ -84,11 +85,10 @@ Countdown(6);
 	  		}
 	  		else if(score===24){
 	  			newTime = timer;
+	  			$.get('/getUserName', function(data) {
+					$('.scoreboard_left').append(data);
+				});
 	  			$(".scoreboard_right").append(newTime);
-	  			// $.get("/profile").done(function (data){
-	  			// 	console.log(data);
-	  			// 	$(".scoreboard_left").append(data);
-	  			// })
 	  		}
 		});
 	}

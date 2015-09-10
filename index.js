@@ -62,15 +62,6 @@ app.get("/logout", function (req,res) {
   res.redirect("/");
 });
 
-app.get("/profile", function (req,res) {
-  req.currentUser(function (err,success){
-    if(err){console.log(err);}
-    else{
-      res.send(success.username);
-    }
-  });
-});
-
 
 // where the user submits the sign-up form
 app.post(["/users", "/signup"], function signup(req, res) {
@@ -110,9 +101,11 @@ app.post(["/sessions", "/"], function login(req, res) {
 
 
 // show the current user
-app.get("/profile", function userShow(req, res) {
+app.get("/getUserName", function userShow(req, res) {
   req.currentUser(function (err, user) {
-    res.send("Hello " + user.username);
+    if(err){return console.log(err);}
+    console.log(user.username);
+    res.send(user.username);
   })
 });
 

@@ -59,8 +59,8 @@ body {
 }
 
 .start_button {
-	position: absolute;
-	z-index: 1;
+	/*position: absolute;
+	z-index: 1;*/
 	margin-top: -4%;
 	color: black;
 	font-size: 40px;
@@ -72,17 +72,17 @@ body {
 }
 
 .timer_box {
-	height: 54px;
-	width: 180px;
+	height: 7%;
+	width: 20%;
 	border-radius: 10px;
-	border: 2px solid black;
+	border: 3px solid black;
 	position: absolute;
 	z-index: 1;
 	font-size: 40px;
 	font-family: vanilla whale;
 	background-color: #fdb813;
-	margin-top: 33.4%;
-	margin-left: 15%;
+	margin-top: 28.5%;
+	margin-left: 77%;
 }
 
 .time_text {
@@ -93,89 +93,70 @@ body {
 #timer_div {
 	z-index: 1;
 	position: absolute;
-	margin-left: 80%;
+	margin-left: 70%;
 	color: black;
-	margin-top: -25.5%; 
+	margin-top: -18%; 
 }
 
-.scoreboard {
+.target_counter {
 	position: absolute;
 	z-index: 1;
-	background-color: black;
-	color: #fdb813;
+	background-color: #fdb813;
+	color: black;
 	font-family: vanilla whale;
 	font-size: 60px;
 	text-align: center;
 	width: 20%;
-	height: 69%;
+	height: 60%;
 	margin-top: -42.5%;
 	margin-left: 77%;
 	border-radius: 10px;
-	border: 3px solid #fdb813;
-}
-
-.leaderboard {
-	position: absolute;
-	background-color: black;
-	width: 96%;
-	height: 83%;
-	border-radius: 10px;
-	margin-left: 2%;
-	margin-top: -6%;
-
+	border: 3px solid black;
 }
 
 .break {
 	margin-top: 0%;
-	border-color: #fdb813;
+	border-color: black;
 }
 
-
-.scoreboard_username {
-	color: #fdb813;
-	font-size: 30px;
-	text-align: left;
-	margin-left: 13%;
+.target_countdown {
+	width: 80%;
+	height: 80%;
+	font-size: 200px;
+	margin: 0 auto;
+	background-color: transparent;
 }
 
-.scoreboard_time {
+.winner {
 	z-index: 1;
-	color: #fdb813;
-	font-size: 30px;
-	text-align: left;
-	margin-left: 70%;
-	margin-top: -13%;
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	background: url('http://www.liquidplate.com/images/films/RC-WING0001_half.jpg');
+	border-radius: 10px;
+	border: 3px solid black;
+	margin-top: -45%;
+	margin-left: 14%;
+	box-shadow: 0 0 50px 300px rgba(192,192,192,0.7);
 }
 
-.scoreboard_left {
-	background-color: white;
-	color: black;
-	text-align: center;
-	margin-top: 1%;
-	margin-left: 2%;
-	font-size: 30px;
-	border: 2px solid #fdb813;
-	border-top-left-radius: 10px; 
-	border-bottom-left-radius: 10px; 
-	width: 60%;
-	height: 90%;
+.winner_box {
+	width: 70%;
+	height: 70%;
+	background-color: #fdb813;
+	border-radius: 10px;
+	margin-top: 8%;
+	margin-left: 15%;
+	border: 4px solid black;
 }
 
-.scoreboard_right {
-	z-index: 1;
-	color: black;
-	text-align: center;
-	font-size: 30px;
-	background-color: white;
-	margin-top: -146.5%;
-	margin-left: 65%;
-	border: 2px solid #fdb813;
-	border-top-right-radius: 10px; 
-	border-bottom-right-radius: 10px; 
-	width: 32%;
-	height: 90%;
 
-}
+
+
+
+
+
+
 
 
 

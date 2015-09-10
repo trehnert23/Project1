@@ -91,10 +91,10 @@ app.post(["/sessions", "/"], function login(req, res) {
         console.log(err);
         res.redirect("/");
       }
-    else { 
-        req.login(user);
-        res.redirect("/profile"); 
-    }
+      else { 
+          req.login(user);
+          res.redirect("/profile"); 
+      }
     });
 
 });
@@ -104,7 +104,6 @@ app.post(["/sessions", "/"], function login(req, res) {
 app.get("/getUserName", function userShow(req, res) {
   req.currentUser(function (err, user) {
     if(err){return console.log(err);}
-    console.log(user.username);
     res.send(user.username);
   })
 });

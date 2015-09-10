@@ -1,9 +1,11 @@
 $(document).ready(function(){
 
+	$('.winner').hide();
 	var counter = 0;
 	var score = 0;
 	var numTargs = 6;
 	var timer = 0;
+	var total = 24;
 
 
 	function createTarget() {
@@ -21,7 +23,6 @@ $(document).ready(function(){
 
 
 	function Countdown(countdown) {
-		
 		$(".start_button").on("click", function(event) {
 			var seconds_left = countdown;
 			var interval = setInterval(function() {
@@ -35,6 +36,8 @@ $(document).ready(function(){
 			      	//remove timer numbers
 			      	$('#countdown_div').remove();
 
+			      	$('.target_countdown').append(total);
+
 				    // creates initial targets
 				    while(numTargs>0){
 				    	createTarget();
@@ -44,6 +47,11 @@ $(document).ready(function(){
 				    $(".targets").on("click",function(event) {
 		    	  		$(this).remove();
 		    	  		score++;
+		    	  		total--;
+		    	  		$('.target_countdown').remove();
+		    	  		$('.target_counter').append('<div class="target_countdown"></div>');
+		    	  		$('.target_countdown').append(total);
+		    	  		console.log(total);
 		    	  		if(score<6){
 		    	  		}
 		    	  		else{
@@ -56,7 +64,7 @@ $(document).ready(function(){
 			}, 1000);
 		});
 	}
-Countdown(6);
+Countdown(2);
 
 
 
@@ -67,7 +75,11 @@ Countdown(6);
 	    $(".targets").on("click",function(event) {
 	  		$(this).remove();
 	  		score++;
-	  		console.log(score);
+	  		total--;
+	  		$('.target_countdown').remove();
+	  		$('.target_counter').append('<div class="target_countdown"></div>');
+	  		$('.target_countdown').append(total);
+	  		console.log(total);
 	  		if(score===6){
 	  			numTargs=6;
 	  			console.log("numTargs= ", numTargs);
@@ -85,10 +97,16 @@ Countdown(6);
 	  		}
 	  		else if(score===24){
 	  			newTime = timer;
-	  			$.get('/getUserName', function(data) {
-					$('.scoreboard_left').append(data);
-				});
-	  			$(".scoreboard_right").append(newTime);
+	  			$('.winner').show();
+	  			$.get('/getUserName', function (err, success){
+	  				if(err){
+	  					console.log(err);
+	  				}
+	  				else{
+	  					$('.winner').append(success);
+	  				}
+	  			});
+	  			$('.winner').append(newTime);
 	  		}
 		});
 	}

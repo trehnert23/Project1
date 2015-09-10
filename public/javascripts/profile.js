@@ -55,7 +55,7 @@ $(document).ready(function(){
 			}, 1000);
 		});
 	}
-Countdown(2);
+Countdown(6);
 
 
 

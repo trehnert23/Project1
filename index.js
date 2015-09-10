@@ -27,8 +27,7 @@ app.use(function (req, res, next) {
   };
   // find the current user
   req.currentUser = function (cb) {
-    db.User.findOne({ _id: req.session.userId },
-      function (err, user) {
+    db.User.findOne({ _id: req.session.userId }, function (err, user) {
         req.user = user;
         cb(null, user);
       })
@@ -61,6 +60,15 @@ app.get("/profile", function (req,res) {
 app.get("/logout", function (req,res) {
   req.logout();
   res.redirect("/");
+});
+
+app.get("/profile", function (req,res) {
+  req.currentUser(function (err,success){
+    if(err){console.log(err);}
+    else{
+      res.send(success.username);
+    }
+  });
 });
 
 

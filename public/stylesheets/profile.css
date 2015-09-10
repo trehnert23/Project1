@@ -3,7 +3,7 @@ h1 {
 	margin-left: 17%;
 	font-size: 100px;
 	margin-top: 1%;
-	color: #A82310;
+	color: #fdb813;
 	font-outline: white;
 	text-shadow:
 		-3px -3px 0 black,  
@@ -26,7 +26,7 @@ body {
 	margin-left: 5%;
 	margin-top: -5%;
 	margin-bottom: 5%;
-	border: 3px solid #A82310;
+	border: 3px solid #fdb813;
 	position: relative;
 }
 
@@ -47,7 +47,7 @@ body {
 	z-index: 1;
 	font-size: 450px;
 	font-family: vanilla whale;
-	color: #A82310;
+	color: #fdb813;
 	margin-top: -7%;
 	margin-left: 34%;
 	text-align: center;
@@ -65,7 +65,7 @@ body {
 	color: black;
 	font-size: 40px;
 	border-radius: 10px;
-	background-color: #A82310;
+	background-color: #fdb813;
 	margin-left: 35%;
 	border: 2px solid black;
 	font-family: vanilla whale;
@@ -80,7 +80,7 @@ body {
 	z-index: 1;
 	font-size: 40px;
 	font-family: vanilla whale;
-	background-color: #A82310;
+	background-color: #fdb813;
 	margin-top: 33.4%;
 	margin-left: 15%;
 }
@@ -101,16 +101,75 @@ body {
 .scoreboard {
 	position: absolute;
 	z-index: 1;
-	background-color: #A82310;
+	background-color: black;
+	color: #fdb813;
+	font-family: vanilla whale;
+	font-size: 60px;
+	text-align: center;
 	width: 20%;
 	height: 69%;
 	margin-top: -42.5%;
 	margin-left: 77%;
 	border-radius: 10px;
-	border: 3px solid black;
+	border: 3px solid #fdb813;
+}
+
+.leaderboard {
+	position: absolute;
+	background-color: black;
+	width: 96%;
+	height: 83%;
+	border-radius: 10px;
+	margin-left: 2%;
+	margin-top: -6%;
+
+}
+
+.break {
+	margin-top: 0%;
+	border-color: #fdb813;
 }
 
 
+.scoreboard_username {
+	color: #fdb813;
+	font-size: 30px;
+	text-align: left;
+	margin-left: 13%;
+}
+
+.scoreboard_time {
+	z-index: 1;
+	color: #fdb813;
+	font-size: 30px;
+	text-align: left;
+	margin-left: 70%;
+	margin-top: -13%;
+}
+
+.scoreboard_left {
+	background-color: white;
+	margin-top: 1%;
+	margin-left: 2%;
+	border: 2px solid #fdb813;
+	border-top-left-radius: 10px; 
+	border-bottom-left-radius: 10px; 
+	width: 60%;
+	height: 90%;
+}
+
+.scoreboard_right {
+	z-index: 1;
+	background-color: white;
+	margin-top: -146.5%;
+	margin-left: 65%;
+	border: 2px solid #fdb813;
+	border-top-right-radius: 10px; 
+	border-bottom-right-radius: 10px; 
+	width: 32%;
+	height: 90%;
+
+}
 
 
 

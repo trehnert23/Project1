@@ -1,12 +1,21 @@
 $(document).ready(function(){
 
-	$('.winner').hide();
 	var counter = 0;
 	var score = 0;
 	var numTargs = 6;
 	var timer = 0;
 	var total = 24;
-	console.log(score);
+	$('.winner').hide	();
+	// $.get('/getUserName', function (err, success){
+	// 	if(err){
+	// 		console.log(err);
+	// 	}
+	// 	else{
+	// 		console.log(success);
+	// 		$('.winner_username').append("this is",success);
+	// 	}
+	// });
+	// $('.winner_time').append("Time: "+timer+" seconds");
 
 
 	function createTarget() {
@@ -52,7 +61,6 @@ $(document).ready(function(){
 		    	  		$('.target_countdown').remove();
 		    	  		$('.target_counter').append('<div class="target_countdown"></div>');
 		    	  		$('.target_countdown').append(total);
-		    	  		console.log(total);
 		    	  		if(score<6){
 		    	  		}
 		    	  		else{
@@ -99,15 +107,17 @@ Countdown(6);
 	  		else if(score===24){
 	  			newTime = timer;
 	  			$('.winner').show();
-	  			$.get('/getUserName', function (err, success){
-	  				if(err){
-	  					console.log(err);
-	  				}
-	  				else{
-	  					$('.winner').append(success);
-	  				}
-	  			});
-	  			$('.winner').append(newTime);
+	  			// $.get('/getUserName', function (err, success){
+	  			// 	if(err){
+	  			// 		console.log(err);
+	  			// 	}
+	  			// 	else{
+	  			// 		console.log(success);
+	  			// 		$('.winner_box').append("Trehnert");
+	  			// 	}
+	  			// });
+	    		$('.winner_username').append("Trehnert");
+	  			$('.winner_time').append("Time: "+newTime+" seconds");
 	  		}
 		});
 	}

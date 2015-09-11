@@ -5,9 +5,10 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="javascripts/profile.js"></script>
   
   <link rel="stylesheet" type="text/css" href="/stylesheets/profile.css">
-  <link rel="shortcut icon" href="https://www.clipartbest.com/cliparts/jcx/Eee/jcxEeeKcE.png">
+  <link rel="shortcut icon" href="http://www.clipartbest.com/cliparts/jcx/Eee/jcxEeeKcE.png">
 </head>
 <body>
   <h1>SHOOTING GALLERY</h1>
@@ -28,16 +29,24 @@
     </div>
 
     <div class="winner">
-      <div class="winner_box"></div>
-    </div>
-    <!-- <form method="get" action="/logout">
-      <div class="logout_button">
-        <button>Logout</button>
+      <div class="winner_box">
+        <div class="winner_username"></div>
+        <div class="winner_time"></div>
       </div>
-    </form> -->
+    </div>
+
+    <form method="get" action="/logout">
+      <input type="submit" value="LOGOUT" class="logout_button"/>
+    </form>
+
     <form>
         <input type="button" value="START" class="start_button"/>
     </form>
-    <script type="text/javascript" src="javascripts/profile.js"></script>
 </body>
 </html>
+
+
+
+
+
+

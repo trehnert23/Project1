@@ -148,13 +148,35 @@ body {
 	margin-top: 8%;
 	margin-left: 15%;
 	border: 4px solid black;
+	text-align: center;
+	font-size: 100px;
+	font-family: vanilla whale;
 }
 
+.logout_button {
+	position: absolute;
+	z-index: 1;
+	margin-top: -4%;
+	color: black;
+	font-size: 40px;
+	border-radius: 10px;
+	background-color: #fdb813;
+	margin-left: 10%;
+	border: 2px solid black;
+	font-family: vanilla whale;
+}
 
+.winner_username {
+	font-family: vanilla whale;
+	text-align: center;
+	font-size: 100px;
+}
 
-
-
-
+.winner_time {
+	font-family: vanilla whale;
+	text-align: center;
+	font-size: 100px;
+}
 
 
 

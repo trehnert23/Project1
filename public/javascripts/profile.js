@@ -5,17 +5,7 @@ $(document).ready(function(){
 	var numTargs = 6;
 	var timer = 0;
 	var total = 24;
-	$('.winner').hide	();
-	// $.get('/getUserName', function (err, success){
-	// 	if(err){
-	// 		console.log(err);
-	// 	}
-	// 	else{
-	// 		console.log(success);
-	// 		$('.winner_username').append("this is",success);
-	// 	}
-	// });
-	// $('.winner_time').append("Time: "+timer+" seconds");
+	$('.winner').hide();
 
 
 	function createTarget() {
@@ -113,7 +103,7 @@ Countdown(6);
 	  			// 	}
 	  			// 	else{
 	  			// 		console.log(success);
-	  			// 		$('.winner_box').append("Trehnert");
+	  			// 		$('.winner_box').append(success);
 	  			// 	}
 	  			// });
 	    		$('.winner_username').append("Trehnert");

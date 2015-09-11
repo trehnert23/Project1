@@ -13,7 +13,7 @@ $(document).ready(function(){
 		var sizeRand = Math.random()*60+40;
 		var leftMargRand = Math.random()*90;
 		var topMargRand = Math.random()*43;
-		$(".shooting_gallery").append("<img class='target"+numTargs+" targets' src='https://www.cliparthut.com/clip-arts/88/bullseye-target-88907.png'>");
+		$(".shooting_gallery").append("<img class='target"+numTargs+" targets' src='http://www.cliparthut.com/clip-arts/88/bullseye-target-88907.png'>");
 		$(".target"+numTargs).css("width", sizeRand+"px");
 		$(".target"+numTargs).css("height", sizeRand+"px");
 		$(".target"+numTargs).css("margin-left", leftMargRand+"%");

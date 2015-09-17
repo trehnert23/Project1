@@ -1,3 +1,10 @@
+/*
+    jc - TODO: implement a second model.
+    Add at least two routes:
+      one to store a new score into a user's scores array
+      one to return an array of previous scores
+*/
+
 var express = require('express'),
     bodyParser = require('body-parser'),
     db = require("./models"),
@@ -12,6 +19,10 @@ app.use(express.static("bower_components"));
 // create our session
 app.use(
   session({
+    /*
+      jc - TODO make your 'super-secret-private-keyyy' actually
+      super-secret (hint: keygen )
+    */
     secret: 'super-secret-private-keyyy',
     resave: false,
     saveUninitialized: true
@@ -38,7 +49,7 @@ app.use(function (req, res, next) {
     req.user = null;
   }
   // call the next middleware in the stack
-  next(); 
+  next();
 });
 
 
@@ -69,7 +80,7 @@ app.post(["/users", "/signup"], function signup(req, res) {
   var user = req.body.user;
   // pull out their email & password
   var username = user.username;
-  var password = user.password; 
+  var password = user.password;
   // create the new user
   db.User.createSecure(username, password, function (err,user) {
     if(err) {console.log(err)}
@@ -91,14 +102,12 @@ app.post(["/sessions", "/"], function login(req, res) {
         console.log(err);
         res.redirect("/");
       }
-      else { 
+      else {
           req.login(user);
-          res.redirect("/profile"); 
+          res.redirect("/profile");
       }
     });
-
 });
-
 
 // show the current user
 app.get("/getUserName", function userShow(req, res) {
@@ -108,15 +117,6 @@ app.get("/getUserName", function userShow(req, res) {
   })
 });
 
-
-
-
-
 var listener = app.listen(process.env.PORT || 3000, function () {
   console.log("Listening on port " + listener.address().port);
 });
-
-
-
-
-
